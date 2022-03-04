@@ -1,0 +1,88 @@
+.text-color{
+    color: #ffee5c !important;
+}
+.background-color{
+    background: #ffee5c !important;
+}
+
+.header-slider-1{
+    background-image: url("../../assets//header/hero2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 930px;
+}
+.header-slider-2{
+    background-image: url("../../assets/header/hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 930px;
+}
+
+.header-slider-2 .slider-content{
+    position: relative;
+    top: 40%;
+    z-index: 100;
+}
+
+.border-design{
+    background-color: #ffee5c;
+    width: 30px;
+    height: 1px;
+}
+
+.common-btn{
+    background-color: #ffee5c;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 12px 59px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.slick-dots {
+    position: absolute;
+    /* bottom: -25px; */
+    /* display: block; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: end;
+    top: 50%;
+    right: 0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    bottom: 0;
+    width: 40px;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    /* background: #b30f0f; */
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    content: '';
+    background: transparent;
+    border: 1px solid lightgray;
+    -webkit-font-smoothing: antialiased;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    background-color: #ffee5c;
+}
+

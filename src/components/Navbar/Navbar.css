@@ -1,0 +1,17 @@
+.navbar-items a {
+    color: white !important;
+    border-top: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.navbar-items a:hover {
+    color: rgb(241, 203, 30) !important;
+    background-color: transparent;
+    border-top: 1px solid #ffee5c;
+
+}
+
+.navbar-active {
+    background-color: transparent !important;
+    border-top: 1px solid #ffee5c !important;
+}
