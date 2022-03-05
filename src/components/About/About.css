@@ -1,0 +1,11 @@
+.about-section{
+    background: #2b2c30;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.about-title-section .icon-line{
+  width: 100px;
+  background-color: lightgray;
+  height: 2px;
+
+}

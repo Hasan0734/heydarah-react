@@ -1,45 +1,76 @@
-.text-color{
+.text-color {
     color: #ffee5c !important;
 }
-.background-color{
+
+.background-color {
     background: #ffee5c !important;
 }
 
-.header-slider-1{
+.header-slider-1 {
     background-image: url("../../assets//header/hero2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 930px;
 }
-.header-slider-2{
+
+.header-slider-2 {
     background-image: url("../../assets/header/hero1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 930px;
 }
 
-.header-slider-2 .slider-content{
+.slider-content {
     position: relative;
     top: 40%;
     z-index: 100;
 }
 
-.border-design{
+
+.border-design {
     background-color: #ffee5c;
     width: 30px;
     height: 1px;
 }
 
-.common-btn{
+.common-btn {
     background-color: #ffee5c;
-    border-radius: 20px;
+    border-radius: 30px;
     outline: none;
     border: none;
     padding: 12px 59px;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
+    font-weight: 500;
+    transition: all 1s linear;
+
 }
-.slick-dots {
+/* .common-btn:hover .button-text-hover{
+    position: relative;
+    color: orange;
+} */
+.common-btn .button-text-hover::before{
+ content: attr(data-text);
+ position: absolute;
+ top: 0;
+ overflow-y: hidden;
+ color: #ffee5c;
+ white-space: nowrap;
+}
+
+.common-btn:hover .button-text-hover::before{
+    animation: textAnimation 0.5s steps(13) forwards;
+}
+@keyframes textAnimation{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 125.797px;
+    }
+}
+
+.header-slider .slick-dots {
     position: absolute;
     /* bottom: -25px; */
     /* display: block; */
@@ -58,7 +89,7 @@
     width: 40px;
 }
 
-.slick-dots li button {
+.header-slider .slick-dots li button {
     display: block;
     width: 12px;
     height: 12px;
@@ -69,7 +100,7 @@
     /* background: #b30f0f; */
 }
 
-.slick-dots li button:before {
+.header-slider .slick-dots li button:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -81,8 +112,20 @@
     border: 1px solid lightgray;
     -webkit-font-smoothing: antialiased;
 }
-.slick-dots li.slick-active button:before {
+
+.header-slider .slick-dots li.slick-active button:before {
     opacity: .75;
     background-color: #ffee5c;
 }
 
+.header-slider .slick-track .slick-active .slider-content .slider-title {
+    animation: fadeInDownBig ease 0.8s both;
+}
+
+.header-slider .slick-track .slick-active .slider-content .slider-title-2 {
+    animation: fadeInLeftBig ease 0.8s both;
+}
+
+.header-slider .slick-track .slick-active .slider-content .slider-info {
+    animation: fadeInRightBig ease 0.8s both;
+}
