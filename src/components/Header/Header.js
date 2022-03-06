@@ -20,7 +20,6 @@ const Header = () => {
     };
     return (
         <>
-
             <section id="Home" className='header-slider'>
                 <Slider {...settings}>
                     <div className='header-slider-1'>

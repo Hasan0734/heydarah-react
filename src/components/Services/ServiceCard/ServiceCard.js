@@ -11,7 +11,6 @@ const ServiceCard = ({ service }) => {
                         <div className='icon-line'></div>
                         <div className='service-icon-area text-color'>
                             {parse(icon)}
-
                         </div>
                         <div className='icon-line'></div>
                     </div>
