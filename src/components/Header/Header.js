@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <>
 
-            <div className='header-slider'>
+            <section id="Home" className='header-slider'>
                 <Slider {...settings}>
                     <div className='header-slider-1'>
                         <div className='slider-content'>
@@ -55,7 +55,7 @@ const Header = () => {
                     </div>
 
                 </Slider>
-            </div>
+            </section>
 
         </>
     );

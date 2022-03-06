@@ -29,7 +29,7 @@ const serviceData = [
 
 const Services = () => {
     return (
-        <section id='#Services' className='service-section'>
+        <section id='Services' className='service-section'>
             <Container>
                 <div className='service-title-section d-flex justify-content-center'>
                     <div>

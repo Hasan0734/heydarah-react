@@ -6,7 +6,7 @@ import AboutSlider from './AboutSlider/AboutSlider';
 const About = () => {
 
     return (
-        <section className='about-section'>
+        <section id="About" className='about-section'>
             <Container >
                 <div className='about-title-section d-flex justify-content-center'>
                     <div>
