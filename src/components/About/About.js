@@ -5,21 +5,9 @@ import Icon from '../../assets/heydarah-icon.png'
 import AboutSlider from './AboutSlider/AboutSlider';
 const About = () => {
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        pauseOnDotsHover: false,
-        draggable: false,
-        swipeToSlide: false
-    };
-
     return (
         <section className='about-section'>
-            <Container  fluid="sm">
+            <Container >
                 <div className='about-title-section d-flex justify-content-center'>
                     <div>
                         <h1 className='text-color text-center'>About Us</h1>

@@ -1,0 +1,21 @@
+.service-section{
+    background: #333439;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.service-card-area{
+    margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+    .service-card-area{
+        padding: 0 100px;
+    }
+
+}
+
+.service-title-section .icon-line{
+  width: 100px;
+  background-color: lightgray;
+  height: 2px;
+
+}

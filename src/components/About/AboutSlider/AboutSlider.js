@@ -43,7 +43,7 @@ const AboutSlider = () => {
         <div className='about-slider'>
             <div className='card-shodow pb-5'>
                 <Slider {...settings}>
-                    {sliderData.map((item, i) => <div className='card about-slider-card pb-3'>
+                    {sliderData.map((item, i) => <div key={i} className='card about-slider-card pb-3'>
                         <div className='row'>
                             <div className='col-12 col-lg-6'>
                                 <img src={item.image} alt="" className='card-img-top' />
@@ -58,18 +58,18 @@ const AboutSlider = () => {
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae error beatae sit voluptas, iure placeat alias nostrum fugit consequatur excepturi deserunt earum laboriosam officiis?</p>
                                     </div>
 
-                                    <ul className='social-icon '>
+                                    <ul className='social-icon'>
                                         <li>
-                                            <a className='text-white' href="/"><i class="fa-brands fa-twitter"></i></a>
+                                            <a className='text-white' href="/"><i className="fa-brands fa-twitter"></i></a>
                                         </li>
                                         <li>
-                                            <a className='text-white' href="/"><i class="fa-brands fa-facebook-f"></i> </a>
+                                            <a className='text-white' href="/"><i className="fa-brands fa-facebook-f"></i> </a>
                                         </li>
                                         <li>
-                                            <a className='text-white' href="/"><i class="fa-brands fa-google-plus-g"></i> </a>
+                                            <a className='text-white' href="/"><i className="fa-brands fa-google-plus-g"></i> </a>
                                         </li>
                                         <li>
-                                            <a className='text-white' href="/"> <i class="fa-brands fa-dribbble"></i> </a>
+                                            <a className='text-white' href="/"> <i className="fa-brands fa-dribbble"></i> </a>
                                         </li>
                                     </ul>
                                     <button className='common-btn'>Contact Us</button>
