@@ -19,7 +19,7 @@ const About = () => {
 
     return (
         <section className='about-section'>
-            <Container>
+            <Container  fluid="sm">
                 <div className='about-title-section d-flex justify-content-center'>
                     <div>
                         <h1 className='text-color text-center'>About Us</h1>

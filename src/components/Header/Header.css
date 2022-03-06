@@ -108,7 +108,8 @@
     height: 12px;
     border-radius: 50%;
     content: '';
-    background: transparent;
+    opacity: 1;
+    background: black;
     border: 1px solid lightgray;
     -webkit-font-smoothing: antialiased;
 }
