@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import './Services.css'
 import Icon from '../../assets/heydarah-icon.png'
 import ServiceCard from './ServiceCard/ServiceCard';
+import SectionHead from '../SectionHead/SectionHead';
 
 const serviceData = [
 
@@ -31,17 +32,7 @@ const Services = () => {
     return (
         <section id='Services' className='service-section'>
             <Container>
-                <div className='service-title-section d-flex justify-content-center'>
-                    <div>
-                        <h1 className='text-color text-center'>Services</h1>
-                        <div className='mt-4 d-flex justify-content-center align-items-center gap-4'>
-                            <span className='icon-line'></span>
-                            <img src={Icon} alt="" />
-                            <span className='icon-line'></span>
-                        </div>
-                    </div>
-
-                </div>
+                <SectionHead title={'Services'}/>
                 <div className='service-card-area'>
                     <div className='row'>
                         {serviceData.map((item, i) => <ServiceCard key={i} service={item} />)}

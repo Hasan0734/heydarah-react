@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Works.css';
 import Icon from '../../assets/heydarah-icon.png';
 import WorksCard from './WorksCard/WorksCard';
+import SectionHead from '../SectionHead/SectionHead';
 
 
 const worksData = [
@@ -17,17 +18,17 @@ const worksData = [
     },
     {   id: 7,
         img: 'https://i.ibb.co/LkvC4b0/item-5.jpg',
-        title: 'Photography'
+        title: 'Web'
     },
     {
         id: 3,
         img: 'https://i.ibb.co/KsG0YnP/item-7.jpg',
-        title: 'Photography'
+        title: 'Branding'
     },
     {
         id: 4,
         img: 'https://i.ibb.co/ggXLTwg/item-4.jpg',
-        title: 'Photography'
+        title: 'Branding'
     },
     {
         id: 5,
@@ -37,7 +38,7 @@ const worksData = [
     {
         id: 6,
         img: 'https://i.ibb.co/3TH9j9Q/item-2.jpg',
-        title: 'Photography'
+        title: 'Web'
     },
     {
         id: 8,
@@ -47,30 +48,34 @@ const worksData = [
 ]
 const Works = () => {
     const [tab, setTab] = useState('all')
+
+    const videoWork = worksData.filter(item => item.title === 'Video')
+    const photography = worksData.filter(item => item.title === 'Photography')
+    const branding = worksData.filter(item => item.title === 'Branding')
+    const web = worksData.filter(item => item.title === 'Web')
+   
     return (
         <section id='Work' className='work-section'>
             <div className='container-fluid'>
-                <div className='service-title-section d-flex justify-content-center'>
-                    <div>
-                        <h1 className='text-color text-center'>Services</h1>
-                        <div className='mt-4 d-flex justify-content-center align-items-center gap-4'>
-                            <span className='icon-line'></span>
-                            <img src={Icon} alt="" />
-                            <span className='icon-line'></span>
-                        </div>
-                    </div>
-                </div>
+               <SectionHead title={"Works"}/>
+               
                 <div className='tab-section'>
                     <ul className='text-white d-flex gap-4 flex-wrap'>
-                        <li><a className={`${tab === 'all' ? 'active' : ''}`} onClick={() => setTab('all')} href="javascript:;">All</a></li>
-                        <li><a className={`${tab === 'branding' ? 'active' : ''}`} onClick={() => setTab('branding')} href="javascript:;">Branding</a></li>
-                        <li><a className={`${tab === 'web' ? 'active' : ''}`} onClick={() => setTab('web')} href="javascript:;">Web</a></li>
-                        <li><a className={`${tab === 'video' ? 'active' : ''}`} onClick={() => setTab('video')} href="javascript:;">Video</a></li>
-                        <li><a className={`${tab === 'photography' ? 'active' : ''}`} onClick={() => setTab('photography')} href="javascript:;">Photography</a></li>
+                        <li><a className={`${tab === 'all' ? 'active' : ''}`} onClick={() => setTab('all')} href="#all">All</a></li>
+                        <li><a className={`${tab === 'branding' ? 'active' : ''}`} onClick={() => setTab('branding')} href="#branding">Branding</a></li>
+                        <li><a className={`${tab === 'web' ? 'active' : ''}`} onClick={() => setTab('web')} href="#web">Web</a></li>
+                        <li><a className={`${tab === 'video' ? 'active' : ''}`} onClick={() => setTab('video')} href="#video">Video</a></li>
+                        <li><a className={`${tab === 'photography' ? 'active' : ''}`} onClick={() => setTab('photography')} href="#photography">Photography</a></li>
                     </ul>
                 </div>
                 <div className='row'>
-                    {worksData.map((item, i) => <WorksCard item={item}/>)}
+
+                    {tab === 'all' && worksData.map((item, i) => <WorksCard  key={i} item={item}/>)}
+                    {tab === 'video' && videoWork.map((item, i) => <WorksCard key={i}  item={item}/>)}
+                    {tab === 'web' && web.map((item, i) => <WorksCard key={i}  item={item}/>)}
+                    {tab === 'photography' && photography.map((item, i) => <WorksCard key={i}  item={item}/>)}
+                    {tab === 'branding' && branding.map((item, i) => <WorksCard key={i}  item={item}/>)}
+
                 </div>
             </div>
         </section>

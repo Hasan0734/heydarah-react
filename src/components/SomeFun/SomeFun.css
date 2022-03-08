@@ -1,0 +1,38 @@
+.some-fun {
+    background-image: url('../../assets/city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: -10;
+    background-attachment: fixed;
+}
+
+.some-fun::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(51,52,57,0.8);
+    z-index: -1;
+}
+
+/* .some-fun2 {
+    background: #333439;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    opacity: 0.5;
+} */
+
+.some-card-area{
+    margin-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+    .some-card-area{
+        padding: 0 100px;
+    }
+
+}
