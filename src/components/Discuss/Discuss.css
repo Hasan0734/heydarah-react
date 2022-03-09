@@ -1,0 +1,15 @@
+
+.discuss-section{
+    background: #333439;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.discuss-area{
+    margin-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+    .discuss-area{
+        padding: 0 100px;
+    }
+
+}

@@ -1,0 +1,22 @@
+.client-card .name{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 10px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+.client-card .title{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.client-card .title, .text{
+    color: #bdbdbd;
+    
+}
+.client-card  .text{
+   font-size: 14px;
+
+}
+

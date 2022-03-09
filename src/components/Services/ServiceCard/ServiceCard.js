@@ -4,7 +4,8 @@ import parse from 'html-react-parser';
 const ServiceCard = ({ service }) => {
     const { title, text, icon } = service
     return (
-        <div className='col-md-12 col-lg-4 '>
+        <div className='col-md-12 col-lg-4 'data-aos="fade-left" data-aos-delay="50"
+        data-aos-duration="1000">
             <div className="card service-card border-0 m-2">
                 <div className="card-body d-flex justify-content-between">
                     <div className='service-icon-box'>

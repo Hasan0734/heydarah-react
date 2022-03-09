@@ -2,3 +2,50 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+.client-slider-area{
+    margin-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+    .client-slider-area{
+        padding: 0 100px;
+    }
+
+}
+
+
+.client-slider-area .slick-dots li button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    /* background: #b30f0f; */
+}
+
+.client-slider-area .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    content: '';
+    opacity: 1 !important;
+    background: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+.client-slider-area .slick-dots li.slick-active button:before {
+    background-color: #ffee5c;
+}
+
+.client-slider-area .slick-slide{
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+.client-slider-area .slick-active{
+    transform: scale(1) !important;
+    transform: all 1s !important;
+}

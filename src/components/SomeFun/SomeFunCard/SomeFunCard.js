@@ -4,7 +4,7 @@ import Parse from 'html-react-parser'
 import CountUp from 'react-countup';
 const SomeFunCard = ({ item }) => {
     return (
-        <div className='col-lg-3 col-mg-6'>
+        <div className='col-lg-3 col-md-6 col-12 mb-5 mb-lg-0'>
             <div className="card bg-transparent some-card">
                 <div className='card-body d-flex align-items-center justify-content-center'>
                     <div>

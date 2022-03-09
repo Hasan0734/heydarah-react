@@ -41,7 +41,7 @@ const AboutSlider = () => {
 
     return (
         <div className='about-slider'>
-            <div className='card-shodow pb-5'>
+            <div className='card-shadow pb-5'>
                 <Slider {...settings}>
                     {sliderData.map((item, i) => <div key={i} className='card about-slider-card pb-3'>
                         <div className='row'>

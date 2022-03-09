@@ -70,8 +70,8 @@ const Features = () => {
                     <div className='row'>
                         {/* features */}
 
-                        <div className='col-md-12 col-lg-5 p-0'>
-                            <div className='me-5 card-shodow'>
+                        <div className='col-md-12 col-lg-5 p-0 mb-5 mb-lg-0'>
+                            <div className='me-5 card-shadow'>
                                 {featuresData.map((item, i) => <Category setDetail={setDetail} feature={item} key={i} />)}
                             </div>
                         </div>

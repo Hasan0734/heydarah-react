@@ -1,0 +1,60 @@
+.price-card {
+    background-color: #2b2c30 !important;
+    padding: 16px;
+    color: white;
+    overflow: hidden;
+    border-radius: 20px !important;
+}
+
+.price-card .pack-type {
+    position: relative;
+}
+
+.price-card .pack-type p {
+    width: 118px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -61px;
+    top: -10px;
+    background: #ffee5c;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+
+}
+
+.price-card .pack-head {
+    margin-top: 27px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.price-card .pack-head .pack-name {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.price-card .pack-head .pack-price {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.price-card .pack-head .pack-price span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price-card .card-service {
+    list-style: none;
+    border-left: 1px dashed #ffee5c;
+    padding-left: 15px;
+}
+.price-card .card-service li{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: #ccc;
+}
