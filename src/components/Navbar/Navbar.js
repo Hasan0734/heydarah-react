@@ -3,6 +3,45 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import Logo from '../../assets/logo.png'
 import './Navbar.css'
 import { useLocation } from 'react-router-dom';
+
+const navItem = [
+    {
+        id: '#Home',
+        name: 'Home'
+    },
+    {
+        id: '#About',
+        name: 'About'
+    },
+    {
+        id: '#Services',
+        name: 'Services'
+    },
+    {
+        id: '#Work',
+        name: 'Work'
+    },
+    {
+        id: '#Team',
+        name: 'Team'
+    },
+    {
+        id: '#Testimonial',
+        name: 'Testimonial'
+    },
+    {
+        id: '#Pricing',
+        name: 'Pricing'
+    },
+    {
+        id: '#Blog',
+        name: 'Blog'
+    },
+    {
+        id: '#Contact',
+        name: 'Contact'
+    },
+]
 const HeaderNav = () => {
    const {hash} = useLocation()
     return (
@@ -19,15 +58,7 @@ const HeaderNav = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav bg-primary" />
                     <Navbar.Collapse id="basic-navbar-nav" className='ms-3 ms-lg-0'>
                         <Nav className="ms-auto gap-2 navbar-items">
-                            <Nav.Link className={`${ hash === '#Home' ? 'navbar-active' : ''}`} href="#Home">Home</Nav.Link>
-                            <Nav.Link className={`${ hash === '#About' ? 'navbar-active' : ''}`} href="#About">About</Nav.Link>
-                            <Nav.Link className={`${ hash === '#Services' ? 'navbar-active' : ''}`} href="#Services">Services</Nav.Link>
-                            <Nav.Link className={`${ hash === '#Work' ? 'navbar-active' : ''}`} href="#Work">Work</Nav.Link>
-                            <Nav.Link className={`${ hash === '#Team' ? 'navbar-active' : ''}`} href="#Team">Team</Nav.Link>
-                            <Nav.Link className={`${ hash === '#Testimonial' ? 'navbar-active' : ''}`} href="#Testimonial">Testimonial</Nav.Link>
-                            <Nav.Link className={`${ hash === '#Pricing' ? 'navbar-active' : ''}`} href="#Pricing">Pricing</Nav.Link>
-                            <Nav.Link className={`${ hash === '#Blog' ? 'navbar-active' : ''}`} href="#Blog">Blog</Nav.Link>
-                            <Nav.Link className={`${ hash === '#Contact' ? 'navbar-active' : ''}`} href="#Contact">Contact</Nav.Link>
+                            {navItem.map((item, i) =>  <Nav.Link key={i} className={`${ hash === item.id ? 'navbar-active' : ''}`} href={item.id}>{item.name}</Nav.Link>)}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

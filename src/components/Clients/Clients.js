@@ -41,7 +41,7 @@ const Clients = () => {
                 <div className='client-slider-area'>
                     <div className="row">
                         <div className='col-2'></div>
-                        <div className='col-8'>
+                        <div className='col-12 col-sm-8'>
                             <Slider {...settings}>
                             {clientData.map((client, i) => <ClientSlider key={i} client={client}/>)}
                             </Slider>

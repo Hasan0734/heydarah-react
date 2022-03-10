@@ -1,15 +1,47 @@
-
-.discuss-section{
+.discuss-section {
     background: #333439;
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.discuss-area{
+
+.discuss-area {
     margin-top: 50px;
 }
+
 @media screen and (min-width: 1200px) {
-    .discuss-area{
+    .discuss-area {
         padding: 0 100px;
     }
 
+}
+
+/* .contact-form input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.contact-form input:focus  {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #ffee5c;
+    box-shadow: none;
+} */
+.contact-form .input-focus{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  
+}
+.contact-form .input-focus:focus{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #ffee5c;
+    box-shadow: none;
+}
+
+.discuss-social li a {
+    color: white;
+    font-size: 25px;
 }
